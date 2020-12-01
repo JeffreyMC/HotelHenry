@@ -1,0 +1,114 @@
+﻿@model HotelHenry.Models.Reservacion
+
+@{
+	ViewData["Title"] = "Perfil Cliente";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+//css
+<link href="/css/estilos.css" rel="stylesheet" />
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center mb-5">
+				<h1>Reservaciones de @ViewBag.User</h1>
+				<h3 style="color:forestgreen; font-weight:bold">@ViewBag.Reserva</h3>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section>
+	<div class="container container-fluid">
+		<div class="row justify-content-center">
+			<div class="col-auto">
+				<h2 class="text-center mb-5">Reservas actuales</h2>
+				<table class="table table-responsive table-striped">
+
+					<thead class="thead-dark">
+						<tr>
+							<th>Fecha entrada</th>
+							<th>Fecha Salida</th>
+							<th>Tipo habitación</th>
+							<th>Cant. habitaciones</th>
+							<th>Cant. Adultos</th>
+							<th>Cant. Adultos Mayores</th>
+							<th>Cant. Niños</th>
+							<th>Total pagado</th>
+							<th></th>
+						</tr>
+					</thead>
+					@foreach (Reservacion res in ViewBag.ReservacionesActuales)
+					{
+					<tr>
+						<td>@res.FechaIngreso.ToString("dd/MM/yyyy")</td>
+						<td>@res.FechaSalida.ToString("dd/MM/yyyy")</td>
+						@foreach (Habitacion h in ViewBag.Rooms)
+							{
+						@if (h.IdHabitacion == res.TipoHabitacion.IdHabitacion)
+								{
+						<td>@h.Tipo</td>
+								}
+							}
+						<td>@res.CantHabitaciones</td>
+						<td>@res.CantAdultos</td>
+						<td>@res.CantMayores</td>
+						<td>@res.CantNinos</td>
+						<td>$@String.Format("{0:0}", res.CostoTotal)</td>
+						<td>
+							<a asp-controller="Huesped" asp-action="EditarReserva" asp-route-id="@res.IdReserva">Modificar Reserva</a>
+						</td>
+					</tr>
+					}
+				</table>
+			</div>
+		</div>
+
+
+
+		<div class="row justify-content-center">
+			<div class="col-auto">
+				<h2 class="text-center mt-3 mb-5">Historial Reservas</h2>
+
+				<table class="table table-responsive table-striped">
+
+					<thead class="thead-dark">
+						<tr>
+							<th>Fecha entrada</th>
+							<th>Fecha Salida</th>
+							<th>Tipo habitación</th>
+							<th>Cant. habitaciones</th>
+							<th>Cant. Adultos</th>
+							<th>Cant. Adultos Mayores</th>
+							<th>Cant. Niños</th>
+							<th>Total pagado</th>
+						</tr>
+					</thead>
+
+					@foreach (Reservacion res in ViewBag.ReservacionesPrevias)
+					{
+					<tr>
+						<td>@res.FechaIngreso.ToString("dd/MM/yyyy")</td>
+						<td>@res.FechaSalida.ToString("dd/MM/yyyy")</td>
+						@foreach (Habitacion h in ViewBag.Rooms)
+							{
+						@if (h.IdHabitacion == res.TipoHabitacion.IdHabitacion)
+								{
+						<td>@h.Tipo</td>
+								}
+							}
+						<td>@res.CantHabitaciones</td>
+						<td>@res.CantAdultos</td>
+						<td>@res.CantMayores</td>
+						<td>@res.CantNinos</td>
+						<td>$@String.Format("{0:0}", res.CostoTotal)</td>
+					</tr>
+					}
+
+				</table>
+			</div>
+		</div>
+
+	</div>
+</section>
+

@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewData["Title"] = "Hotel Henry VIII";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<header id="header">
+    <div class="container mt-7">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="header-content-left">
+                    <!--Imagen del hotel-->
+                    <img class="img-fluid" src="Images/Hotel/Hotel.jpeg" alt="Hotel Henry VIII" id="hotel"
+                         style="width: 100%;">
+                </div>
+            </div>
+
+            <div class="col-md-6 my-auto">
+                <div class="header-content-right">
+                    <h1 class=" text-center shadow p-3 mb-5 bg-white rounded">HOTEL HENRY VIII</h1>
+                    <p class="mt-5 text-justify">
+                        El Hotel Henry VIII es un hotel 5 estrellas ubicado en San José, Costa Rica.
+                        Este hotel cuenta con un diseño renacentista y además cuenta con muchas amenidades,
+                        entre ellas: wifi en todas las habitaciones, áreas comunes, tours, desayunos incluídos,
+                        amplio parqueo, gimnasio, jacuzzi, piscinas, restaurante a la carta, entre muchas otras más.
+                        Asimismo, en el Hotel Henry VIII puedes organizar fiestas y actividades con la mejor calidad
+                        y servicio, como solo un hotel de 5 estrellas puede ofrecer.
+                    </p>
+                    @Html.ActionLink("Reservar", "Reservacion", "Huesped", null, new { @class = "btn btn-outline-secondary btn-lg mt-2" })
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="mt-5 text-center shadow p-3 mb-5 bg-white rounded">Instalaciones y Servicios</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <img class="img-fluid img-thumbnail mt-2" src="Images/Actividades/Activitie4.jpeg" alt="Niños jugando" width="100%" id="actividades">
+                <h4 class="mt-2 text-center">Actividades</h4>
+            </div>
+
+            <div class="col-md-4">
+                <img class="img-fluid img-thumbnail mt-2" src="Images/Gimnasio/Gym3.jpg" alt="Gimnasio" width="100%" id="gym">
+                <h4 class="mt-2 text-center">Gimnasio</h4>
+            </div>
+
+            <div class="col-md-4">
+                <img class="img-fluid img-thumbnail mt-2" src="Images/Restaurantes/Rest4.jpeg" alt="Restaurante" width="100%" id="rest">
+                <h4 class="mt-2 text-center">Restaurantes</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center mt-4">
+                @Html.ActionLink("Ir a Galería", "Galeria", "Huesped", null, new {@class="btn btn-outline-secondary btn-lg mt-2 mb-5" })
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+

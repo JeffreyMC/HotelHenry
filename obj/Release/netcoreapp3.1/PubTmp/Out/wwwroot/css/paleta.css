@@ -1,0 +1,13 @@
+.navbar-custom {
+    background-color: #641220;
+    color: #c1c1c1;
+}
+
+.navbar a:hover {
+    border-bottom: 3px solid red;
+}
+
+#footer {
+    background-color: #8d99ae;
+}
+

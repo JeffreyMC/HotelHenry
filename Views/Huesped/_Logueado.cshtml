@@ -1,0 +1,28 @@
+﻿@using Microsoft.AspNetCore.Http
+
+@if (Context.Session.GetString("Usuario") != null)
+{
+    var nombre = (string)Context.Session.GetString("Usuario");
+
+    <li class="nav-item dropdown nav-item">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-user-circle"></i><Strong> @nombre</Strong>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="@Url.Action("SignOut", "Huesped")"><i class="fa fa-sign-out"></i> Salir</a>
+        </div>
+    </li>
+
+}
+
+else
+{
+    <li class="nav-item">
+        <a class="nav-link" href="@Url.Action("Login", "Huesped")">Login</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="@Url.Action("SignUp", "Huesped")">SignUp</a>
+    </li>
+}
+

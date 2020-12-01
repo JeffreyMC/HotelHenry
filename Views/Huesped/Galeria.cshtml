@@ -1,0 +1,358 @@
+﻿
+@{
+	ViewData["Title"] = "Galería";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1>Galería</h1>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section id="Galeria">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<img class="img-fluid imgGalery" src="~/Images/Habitaciones/Room3.jpeg" alt="Habitaciones" width="100%"
+					 data-toggle="modal" data-target="#Rooms">
+				<h4 class="text-center mt-2">Habitaciones</h4>
+			</div>
+			<div class="col-md-4">
+				<img class="img-fluid imgGalery" src="~/Images/Restaurantes/Rest4.jpeg" alt="Restaurante" width="100%" data-toggle="modal" data-target="#Rests">
+				<h4 class="text-center mt-2">Restaurantes</h4>
+			</div>
+			<div class="col-md-4">
+				<img class="img-fluid imgGalery" src="~/Images/Gastronomia/Platillo3.jpeg" alt="Gastronomía" width="100%" data-toggle="modal" data-target="#Food">
+				<h4 class="text-center mt-2">Gastronomía</h4>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4">
+				<img class="img-fluid imgGalery" src="~/Images/Gimnasio/Gym1.jpeg" alt="Gimnasio" width="100%" data-toggle="modal" data-target="#Gym">
+				<h4 class="text-center mt-2">Gimnasio</h4>
+			</div>
+			<div class="col-md-4">
+				<img class="img-fluid imgGalery" src="~/Images/Piscinas/Piscina1.jpeg" alt="Piscinas" width="100%" data-toggle="modal" data-target="#Pools">
+				<h4 class="text-center mt-2">Piscinas</h4>
+			</div>
+			<div class="col-md-4">
+				<img class="img-fluid imgGalery" src="~/Images/Actividades/actividad1.jpeg" alt="Actividades" width="100%" data-toggle="modal" data-target="#Act">
+				<h4 class="text-center mt-2">Actividades</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<img class="img-fluid imgGalery" src="~/Images/Jacuzzi/Jacuzzi2.jpg" alt="Jacuzzi" width="100%" data-toggle="modal" data-target="#Jacuzzi">
+				<h4 class="text-center mt-2">Jacuzzi</h4>
+			</div>
+			<div class="col-md-4">
+				<img class="img-fluid imgGalery" src="~/Images/Celebraciones/Celebracion1.jpeg" alt="Celebraciones"
+					 width="100%" data-toggle="modal" data-target="#Celeb">
+				<h4 class="text-center mt-2">Celebraciones</h4>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<!-- Modal Habitaciones-->
+<div class="modal fade" id="Rooms" tabindex="-1" role="dialog" aria-labelledby="ModalCarouselLabel">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div id="carousel-modal-Rooms" class="carousel slide" data-ride="carousel">
+
+
+
+				<!-- Sliding images statring here -->
+				<div class="carousel-inner">
+					<div class="carousel-item">
+						<img src="~/Images/Habitaciones/Room1.jpeg" width="100%" class="img-fluid">
+					</div>
+					<div class="carousel-item">
+						<img src="~/Images/Habitaciones/Room3.jpeg" width="100%" class="img-fluid">
+					</div>
+					<div class="carousel-item">
+						<img src="~/Images/Habitaciones/Room4.jpeg" width="100%" class="img-fluid">
+					</div>
+					<div class="carousel-item active">
+						<img src="~/Images/Habitaciones/Room5.jpeg" width="100%" class="img-fluid">
+					</div>
+
+				</div>
+				<!-- Next / Previous controls here -->
+				<a class="carousel-control-prev" href="#carousel-modal-Rooms" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#carousel-modal-Rooms" role="button" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal Restaurantes-->
+<div class="modal fade" id="Rests" tabindex="-1" role="dialog" aria-labelledby="ModalCarouselLabel">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div id="carousel-modal-Rests" class="carousel slide" data-ride="carousel">
+
+
+
+				<!-- Sliding images statring here -->
+				<div class="carousel-inner">
+					<div class="carousel-item">
+						<img src="~/Images/Restaurantes/Rest4.jpeg" width="100%" class="img-fluid">
+					</div>
+					<div class="carousel-item">
+						<img src="~/Images/Restaurantes/Rest2.jpeg" width="100%" class="img-fluid">
+					</div>
+					<div class="carousel-item">
+						<img src="~/Images/Restaurantes/Rest3.jpeg" width="100%" class="img-fluid">
+					</div>
+					<div class="carousel-item active">
+						<img src="~/Images/Restaurantes/Rest.jpeg" width="100%" class="img-fluid">
+					</div>
+
+				</div>
+				<!-- Next / Previous controls here -->
+				<a class="carousel-control-prev" href="#carousel-modal-Rests" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#carousel-modal-Rests" role="button" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal Food-->
+<div class="modal fade" id="Food" tabindex="-1" role="dialog" aria-labelledby="ModalCarouselLabel">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div id="carousel-modal-Food" class="carousel slide" data-ride="carousel">
+
+
+
+				<!-- Sliding images statring here -->
+				<div class="carousel-inner">
+					<div class="carousel-item">
+						<img src="~/Images/Gastronomia/Platillo1.jpeg" width="100%" class="img-fluid">
+					</div>
+					<div class="carousel-item">
+						<img src="~/Images/Gastronomia/Platillo2.jpeg" width="100%" class="img-fluid">
+					</div>
+					<div class="carousel-item">
+						<img src="~/Images/Gastronomia/Platillo3.jpeg" width="100%" class="img-fluid">
+					</div>
+					<div class="carousel-item active">
+						<img src="~/Images/Gastronomia/Platillo4.jpeg" width="100%" class="img-fluid">
+					</div>
+
+				</div>
+				<!-- Next / Previous controls here -->
+				<a class="carousel-control-prev" href="#carousel-modal-Food" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#carousel-modal-Food" role="button" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal Gym-->
+<div class="modal fade" id="Gym" tabindex="-1" role="dialog" aria-labelledby="ModalCarouselLabel">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div id="carousel-modal-Gym" class="carousel slide" data-ride="carousel">
+
+
+
+				<!-- Sliding images statring here -->
+				<div class="carousel-inner">
+					<div class="carousel-item">
+						<img src="~/Images/Gimnasio/Gym1.jpeg" width="auto" class="img-fluid">
+					</div>
+					<div class="carousel-item">
+						<img src="~/Images/Gimnasio/Gym2.jpg" width="auto" class="img-fluid">
+					</div>
+					<div class="carousel-item">
+						<img src="~/Images/Gimnasio/Gym3.jpg" width="auto" class="img-fluid">
+					</div>
+					<div class="carousel-item active">
+						<img src="~/Images/Gimnasio/Gym4.jpg" width="auto" class="img-fluid">
+					</div>
+
+				</div>
+				<!-- Next / Previous controls here -->
+				<a class="carousel-control-prev" href="#carousel-modal-Gym" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#carousel-modal-Gym" role="button" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal Piscinas-->
+<div class="modal fade" id="Pools" tabindex="-1" role="dialog" aria-labelledby="ModalCarouselLabel">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div id="carousel-modal-Pools" class="carousel slide" data-ride="carousel">
+
+
+
+				<!-- Sliding images statring here -->
+				<div class="carousel-inner">
+					<div class="carousel-item">
+						<img src="~/Images/Piscinas/Piscina1.jpeg" width="100%" class="img-fluid">
+					</div>
+					<div class="carousel-item">
+						<img src="~/Images/Piscinas/Piscina2.jpeg" width="100%" class="img-fluid">
+					</div>
+					<div class="carousel-item">
+						<img src="~/Images/Piscinas/Piscina3.jpeg" width="100%" class="img-fluid">
+					</div>
+					<div class="carousel-item active">
+						<img src="~/Images/Piscinas/Piscina4.jpeg" width="100%" class="img-fluid">
+					</div>
+
+				</div>
+				<!-- Next / Previous controls here -->
+				<a class="carousel-control-prev" href="#carousel-modal-Pools" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#carousel-modal-Pools" role="button" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal Actividades-->
+<div class="modal fade" id="Act" tabindex="-1" role="dialog" aria-labelledby="ModalCarouselLabel">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div id="carousel-modal-Act" class="carousel slide" data-ride="carousel">
+
+
+
+				<!-- Sliding images statring here -->
+				<div class="carousel-inner">
+					<div class="carousel-item">
+						<img src="~/Images/Actividades/actividad1.jpeg" width="100%" class="img-fluid">
+					</div>
+					<div class="carousel-item">
+						<img src="~/Images/Actividades/Actividad2.jpeg" width="100%" class="img-fluid">
+					</div>
+					<div class="carousel-item">
+						<img src="~/Images/Actividades/Activitie3.jpeg" width="100%" class="img-fluid">
+					</div>
+					<div class="carousel-item active">
+						<img src="~/Images/Actividades/Activitie4.jpeg" width="100%" class="img-fluid">
+					</div>
+
+				</div>
+				<!-- Next / Previous controls here -->
+				<a class="carousel-control-prev" href="#carousel-modal-Act" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#carousel-modal-Act" role="button" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal Jacuzzi-->
+<div class="modal fade" id="Jacuzzi" tabindex="-1" role="dialog" aria-labelledby="ModalCarouselLabel">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div id="carousel-modal-Jacuzzi" class="carousel slide" data-ride="carousel">
+
+
+
+				<!-- Sliding images statring here -->
+				<div class="carousel-inner">
+					<div class="carousel-item">
+						<img src="~/Images/Jacuzzi/Jacuzzi1.jpg" width="100%" class="img-fluid">
+					</div>
+					<div class="carousel-item">
+						<img src="~/Images/Jacuzzi/Jacuzzi2.jpg" width="100%" class="img-fluid">
+					</div>
+					<div class="carousel-item">
+						<img src="~/Images/Jacuzzi/Jacuzzi3.jpg" width="100%" class="img-fluid">
+					</div>
+					<div class="carousel-item active">
+						<img src="~/Images/Jacuzzi/Jacuzzi4.jpg" width="100%" class="img-fluid">
+					</div>
+
+				</div>
+				<!-- Next / Previous controls here -->
+				<a class="carousel-control-prev" href="#carousel-modal-Jacuzzi" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#carousel-modal-Jacuzzi" role="button" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal Celebraciones-->
+<div class="modal fade" id="Celeb" tabindex="-1" role="dialog" aria-labelledby="ModalCarouselLabel">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div id="carousel-modal-Celeb" class="carousel slide" data-ride="carousel">
+
+
+
+				<!-- Sliding images statring here -->
+				<div class="carousel-inner">
+					<div class="carousel-item">
+						<img src="~/Images/Celebraciones/Celebracion1.jpeg" width="100%" class="img-fluid">
+					</div>
+					<div class="carousel-item">
+						<img src="~/Images/Celebraciones/celebracion2.jpeg" width="100%" class="img-fluid">
+					</div>
+					<div class="carousel-item">
+						<img src="~/Images/Celebraciones/Celebracion3.jpeg" width="100%" class="img-fluid">
+					</div>
+					<div class="carousel-item active">
+						<img src="~/Images/Celebraciones/Celebracion4.jpeg" width="100%" class="img-fluid">
+					</div>
+
+				</div>
+				<!-- Next / Previous controls here -->
+				<a class="carousel-control-prev" href="#carousel-modal-Celeb" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#carousel-modal-Celeb" role="button" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+
+			</div>
+		</div>
+	</div>
+</div>

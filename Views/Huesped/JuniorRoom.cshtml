@@ -1,0 +1,34 @@
+﻿@model HotelHenry.Models.Habitacion
+@{
+    ViewData["Title"] = "Habitación Junior";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center mt-5 mb-5 titulo">
+                <h1>Habitación Junior</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-justify">
+                    La habitación Junior ofrece mayor espacio y comodidad. Además, estas habitaciones ofrecen
+                    una cama doble junto con una cama individual. La suite Junior cuenta con aire acondicionado,
+                    TV de plasma y un mini-refrigerador.
+                </p>
+
+                <h3 class="mt-5 text-left">Precio regular por noche: <strong>$@String.Format("{0:0}", Model.CostoAdultos)</strong></h3>
+                <h3 class="mb-5 text-left">Precio niños y adultos mayores: <strong>$@String.Format("{0:0}", Model.CostoNinos)</strong></h3>
+                @Html.ActionLink("Reservar", "Reservacion", "Huesped", null, new { @class = "btn btn-success bt-lg mb-5" })
+            </div>
+
+            <div class="col-md-6">
+                <img src="~/Images/Habitaciones/Junior.jpg" alt="Habitación Junior" class="img-fluid" width="100%">
+            </div>
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,27 @@
+header {
+    margin-top: 120px;
+}
+
+#services {
+    background-color: #f1f1f1;
+}
+
+.imgGalery:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.titulo {
+    padding-top: 70px;
+}
+
+
+.navbar {
+    box-shadow: 2px 2px 5px #000;
+}
+
+table, th, td {
+    text-align: center;
+}
+
+

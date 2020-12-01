@@ -1,0 +1,208 @@
+﻿@model HotelHenry.Models.Reservacion
+
+@{
+	ViewData["Title"] = "Editar Reserva";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section style="margin-top:75px">
+	<div class="container">
+		<form method="post">
+			<div class="form-group">
+				<div class="row">
+					@Html.AntiForgeryToken()
+
+					<!--ID de reserva escondido-->
+					@Html.HiddenFor(id => id.IdReserva)
+
+					<div class="col-md-4 shadow-lg p-3 mb-5 bg-white rounded">
+						<h3 class="mt-5 mb-3"><i class="fa fa-user-circle"></i> Datos Personales</h3>
+						<label for="name" id="name">Nombre:</label>
+						<input type="text" class="form-control" value="@ViewBag.Nombre" disabled="disabled">
+						<label for="text" id="lastname">Apellidos:</label>
+						<input type="text" class="form-control" value="@ViewBag.Apellidos" disabled="disabled">
+						<label for="text" id="email">Correo electrónico:</label>
+						<input type="email" class="form-control" value="@ViewBag.Correo" disabled="disabled">
+					</div>
+
+					<div class="col-md-4 shadow-lg p-3 mb-5 bg-white rounded">
+						<!--Escoger fechas-->
+						<h3 class="mt-5 mb-3"><i class="fa fa-calendar"></i> Escoger fechas</h3>
+						@Html.LabelFor(f => f.FechaIngreso, "Fecha de llegada")
+						<input asp-for="FechaIngreso" type="date" class="form-control" required="required" id="fechaLlegada" onchange="calcDias(); total();" />
+
+
+						@Html.LabelFor(f => f.FechaIngreso, "Fecha de Salida")
+						<input asp-for="FechaSalida" type="date" class="form-control" required="required" id="fechaSalida" onchange="calcDias(); total();" />
+
+
+						@Html.LabelFor(d => d.CantDias, "Cantidad de días")
+						@Html.TextBoxFor(d => d.CantDias, new { @id = "diasTotal", @style = "display:none" })
+						<input type="text" class="form-control" disabled="disabled" id="cantDias" />
+					</div>
+
+					<div class="col-md-4 shadow-lg p-3 mb-5 bg-white rounded">
+						<!--Opciones de habitación-->
+						<h3 class="mt-5 mb-3"><i class="fa fa-bed"></i> Tipo de Habitación</h3>
+						@Html.LabelFor(m => m.TipoHabitacion.IdHabitacion, "Tipo de habitación")
+						@Html.DropDownListFor(model => model.TipoHabitacion.IdHabitacion, new SelectList(ViewBag.Habitaciones, "IdHabitacion", "Tipo"), new { @class = "form-control", @id = "tipo", @onchange = "total();" })
+
+						@Html.LabelFor(m => m.CantHabitaciones, "Cantidad de habitaciones")
+						@Html.DropDownListFor(m => m.CantHabitaciones, new List<SelectListItem>
+							{
+								new SelectListItem{ Text="1", Value = "1" },
+								new SelectListItem{ Text="2", Value = "2" },
+								new SelectListItem{ Text="3", Value = "3" },
+								new SelectListItem{ Text="4", Value = "4" },
+								new SelectListItem{ Text="5", Value = "5" },
+								new SelectListItem{ Text="6", Value = "6" },
+								new SelectListItem{ Text="7", Value = "7" },
+								new SelectListItem{ Text="8", Value = "8" },
+								new SelectListItem{ Text="9", Value = "9" },
+								new SelectListItem{ Text="10", Value = "10" },
+							}, new { @class = "form-control", @id = "opciones", @onchange = "cantHab();" })
+
+						@Html.LabelFor(m => m.CantAdultos, "Cantidad de adultos")
+						@Html.DropDownListFor(m => m.CantAdultos, new List<SelectListItem>
+							{
+								new SelectListItem{ Text="0", Value = "0" },
+								new SelectListItem{ Text="1", Value = "1", Selected=true},
+								new SelectListItem{ Text="2", Value = "2" },
+								new SelectListItem{ Text="3", Value = "3" },
+								new SelectListItem{ Text="4", Value = "4" },
+								new SelectListItem{ Text="5", Value = "5" },
+								new SelectListItem{ Text="6", Value = "6" },
+								new SelectListItem{ Text="7", Value = "7" },
+								new SelectListItem{ Text="8", Value = "8" },
+								new SelectListItem{ Text="9", Value = "9" },
+								new SelectListItem{ Text="10", Value = "10" },
+							}, new { @class = "form-control", @id = "cantAdultos", @onchange = "total();" })
+
+						@Html.LabelFor(m => m.CantMayores, "Cantidad de adultos mayores")
+						@Html.DropDownListFor(m => m.CantMayores, new List<SelectListItem>
+							{
+								new SelectListItem{ Text="0", Value = "0" },
+								new SelectListItem{ Text="1", Value = "1",},
+								new SelectListItem{ Text="2", Value = "2" },
+								new SelectListItem{ Text="3", Value = "3" },
+								new SelectListItem{ Text="4", Value = "4" },
+								new SelectListItem{ Text="5", Value = "5" },
+								new SelectListItem{ Text="6", Value = "6" },
+								new SelectListItem{ Text="7", Value = "7" },
+								new SelectListItem{ Text="8", Value = "8" },
+								new SelectListItem{ Text="9", Value = "9" },
+								new SelectListItem{ Text="10", Value = "10" },
+							}, new { @class = "form-control", @id = "cantMayores", @onchange = "total();" })
+
+						@Html.LabelFor(m => m.CantNinos, "Cantidad de niños")
+						@Html.DropDownListFor(m => m.CantNinos, new List<SelectListItem>
+							{
+								new SelectListItem{ Text="0", Value = "0" },
+								new SelectListItem{ Text="1", Value = "1", },
+								new SelectListItem{ Text="2", Value = "2" },
+								new SelectListItem{ Text="3", Value = "3" },
+								new SelectListItem{ Text="4", Value = "4" },
+								new SelectListItem{ Text="5", Value = "5" },
+								new SelectListItem{ Text="6", Value = "6" },
+								new SelectListItem{ Text="7", Value = "7" },
+								new SelectListItem{ Text="8", Value = "8" },
+								new SelectListItem{ Text="9", Value = "9" },
+								new SelectListItem{ Text="10", Value = "10" },
+							}, new { @class = "form-control", @id = "cantNinos", @onchange = "total();" })
+
+					</div>
+
+
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-4 shadow-lg p-3 mb-5 bg-white rounded">
+						<!--Opciones de pago-->
+						<h3 class="mt-5 mb-3"><i class="fa fa-credit-card-alt"></i> Opciones de pago</h3>
+						<label for="room">Formas de pago</label>
+						<select name="dropdownlist" id="opcionPago" class="form-control">
+							<option value="efectivo">Efectivo</option>
+							<option value="tarjeta">Tarjeta débito/crédito</option>
+						</select>
+					</div>
+
+					<div class="col-md-8 shadow-lg p-3 mb-5 bg-white rounded text-center">
+						<h1 class="mt-5">Total por pagar: $ <span id="total"></span></h1>
+						@Html.TextBoxFor(c => c.CostoTotal, new { @id = "costoFinal", @hidden = "hidden" })
+						<input type="button" value="Reservar" class="btn btn-success btn-lg mt-5 mb-5" data-toggle="modal" data-target="#reserva">
+					</div>
+				</div>
+
+				<div class="modal fade" id="reserva" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								Confirmar reserva
+							</div>
+							<div class="modal-body">
+								¿Los datos ingresados son correctos?
+
+								<!-- We display the details entered by the user here -->
+								<table class="table">
+									<tr>
+										<th>A nombre de</th>
+										<th>Cantidad de habitaciones</th>
+										<th>Cantidad de días</th>
+										<th>Total a pagar</th>
+									</tr>
+									<tr>
+										<td>@ViewBag.Nombre @ViewBag.Apellidos</td>
+										<td id="hab" value="1"></td>
+										<td id="days"></td>
+										<td id="cost"></td>
+									</tr>
+								</table>
+
+							</div>
+
+							<div class="modal-footer">
+								<button class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+								<input type="submit" class="btn btn-success success" value="Editar">
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</form>
+	</div>
+</section>
+
+<!--Precios las habitaciones-->
+@foreach (Habitacion h in ViewBag.Habitaciones)
+{
+	if (h.IdHabitacion == 1)
+	{
+		<span id="estandarAdultos" hidden="hidden">@h.CostoAdultos</span>
+		<span id="estandarNinos" hidden="hidden">@h.CostoNinos</span>
+	}
+	if (h.IdHabitacion == 2)
+	{
+		<span id="juniorAdultos" hidden="hidden">@h.CostoAdultos</span>
+		<span id="juniorNinos" hidden="hidden">@h.CostoNinos</span>
+	}
+	if (h.IdHabitacion == 3)
+	{
+		<span id="deluxeAdultos" hidden="hidden">@h.CostoAdultos</span>
+		<span id="deluxeNinos" hidden="hidden">@h.CostoNinos</span>
+	}
+}
+
+<!--Fecha de hoy-->
+<span id="hoy" hidden="hidden">@DateTime.Today</span>
+@*Script para las validaciones de la reserva: sumas de costos*@
+
+<script src="/js/reservaValidaciones.js"></script>
+<script>
+	document.getElementById("cantDias").value = @Model.CantDias;
+</script>
+
+
+
+

@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2020-09-02T00:30:29.2268295Z"
+    }
+  },
+  "parameters": {
+    "resourceGroup": {
+      "Type": "resourceGroup",
+      "Value": "Hotel"
+    },
+    "subscriptionId": {
+      "Type": "subscription",
+      "Value": "81622f04-6ba7-4793-97ef-dc7660e8af85"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+﻿@model HotelHenry.Models.Habitacion
+
+@{
+	ViewData["Title"] = "Editar Precios";
+	Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+
+
+<div class="container">
+
+	<h1 style="margin-top:120px">Editar Precios de la habitación</h1>
+
+	<div class="row">
+		<div class="col-md-4">
+			<form asp-action="EditarPrecios">
+				<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+				<input type="hidden" asp-for="IdHabitacion" />
+				<div class="form-group">
+					<label asp-for="Tipo" class="control-label"></label>
+					<input asp-for="Tipo" class="form-control" disabled="disabled" required data-error="Este campo es obligatorio" />
+					<span asp-validation-for="Tipo" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<label asp-for="CostoAdultos" class="control-label">Costo Adultos</label>
+					<input asp-for="CostoAdultos" class="form-control" required="required" />
+					<span asp-validation-for="CostoAdultos" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<label asp-for="CostoNinos" class="control-label">Costo niños y adultos mayores</label>
+					<input asp-for="CostoNinos" class="form-control" required="required" />
+					<span asp-validation-for="CostoNinos" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<label asp-for="Disponible" class="control-label"></label>
+					@Html.DropDownListFor(d => d.Disponible, new List<SelectListItem>
+					{
+						new SelectListItem{Text="SI", Value="SI" },
+						new SelectListItem{ Text="NO", Value="NO"}
+					}, new { @class = "form-control" })
+					<span asp-validation-for="Disponible" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<input type="submit" value="Guardar" class="btn btn-primary" />
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="mb-5">
+		<a asp-action="Mantenimiento">Volver a la lista</a>
+	</div>
+</div>
+
+

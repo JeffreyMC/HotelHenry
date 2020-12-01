@@ -1,0 +1,57 @@
+﻿@model HotelHenry.Models.Usuario
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="mt-2 mb-5">Ingresar</h1>
+                <h2 style="color:red; font-weight:bold">@ViewBag.Error</h2>
+                <h2 style="color:forestgreen; font-weight:bold" ">@ViewBag.Success</h2>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <!--Formulario para loguearse-->
+                <form method="post" class="formulario">
+                    <div class="fila1">
+                        <i class="fa fa-envelope-o"></i>
+                        @Html.LabelFor(c => c.Correo, "Correo electrónico", new { @class = "labelForm", required = "required" })
+                    </div>
+
+                    <div class="mb-2">
+                        @Html.TextBoxFor(c => c.Correo, new { @class = "form-control", type = "email", placeholder = "Introduzca su correo", required = "required" })
+                    </div>
+
+
+                    <div>
+                        <i class="fa fa-eye-slash"></i>
+                        @Html.LabelFor(p => p.Password, "Contraseña", new { @class = "labelForm" })
+                    </div>
+
+                    <div>
+                        @Html.PasswordFor(p => p.Password, new { @class = "form-control", placeholder = "Introduzca la contraseña" })
+                    </div>
+
+
+                    <input type="submit" value="Ingresar" class="btn btn-success btn-lg btn-block mt-5" id="btIngresar">
+                </form>
+                <br />
+                @Html.ActionLink("¿No tienes una cuenta? ¡Regístrate ahora!", "SignUp")"
+            </div>
+
+            <div class="col-md-8 mb-5">
+                <img src="/Logo/logoHotel.png" alt="Logo Hotel" class="img-fluid d-block mx-auto" width="60%">
+            </div>
+        </div>
+    </div>
+</section>
+

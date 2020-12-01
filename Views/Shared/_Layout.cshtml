@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="icon" href="~/Logo/Icono.png">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/estilos.css">
+    <link rel="stylesheet" href="~/css/paleta.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+    <div class="container" id="menu">
+        <nav class="navbar navbar-custom navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="@Url.Action("Index", "Huesped")">
+                <img class="img-fluid" src="~/Logo/logoHotel.png" alt="Logo Hotel Henry VIII" width="100" id="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-hotel"></i> Habitaciones
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="@Url.Action("StandardRoom", "Huesped")">Estándar</a>
+                            <a class="dropdown-item" href="@Url.Action("JuniorRoom", "Huesped")">Junior</a>
+                            <a class="dropdown-item" href="@Url.Action("DeluxeRoom", "Huesped")">Deluxe</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="nav-link" @Html.ActionLink("Galería", "Galeria") </a>
+                    </li>
+                    <partial name="~/Views/Huesped/_MisReservaciones.cshtml" />
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <partial name="~/Views/Huesped/_Logueado.cshtml" />
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    @RenderBody()
+
+
+    <footer id="footer" style="margin-bottom:0px">
+        <div class="container">
+            <div class="row mt-2">
+                <div class="col-md-6 text-center mt-auto mb-5">
+                    <h3 class="mb-5">Síguenos</h3>
+                    <img class="img-fluid" src="~/Images/Icons/Facebook2.png" alt="Facebook" width="10%">
+                    <img class="img-fluid" src="~/Images/Icons/Instagram BN.png" alt="Instagram" width="10%">
+                    <img class="img-fluid" src="~/Images/Icons/Twitter BN.png" alt="Twitter" width="10%">
+                    <img class="img-fluid" src="~/Images/Icons/YouTube2.png" alt="YouTube" width="10%">
+                </div>
+
+                <div class="col-md-6 text-center mt-auto">
+                    <h3 class="mt-4 mb-4">Contáctanos</h3>
+                    <p>
+                        <img class="img-fluid" src="~/Images/Icons/Telephone.png" alt="teléfono" width="5%"> +506 2222-2222
+                    </p>
+                    <p>
+                        <img class="img-fluid" src="~/Images/Icons/Mail.png" alt="email" width="5%"> hotelhenryviii@hotel.com
+                    </p>
+                    <p>
+                        <img class="img-fluid" src="~/Images/Icons/WhatsApp.png" alt="WhatsApp" width="5%"> +506 8888-8888
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mt-5 text-center">
+                    <h5>Derechos Reservados 2020</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    @*<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>*@
+    @*<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>*@
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <!--script para efectos al abrir-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="~/js/efectos.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

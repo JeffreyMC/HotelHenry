@@ -1,0 +1,392 @@
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Afghanistan');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Albania');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Algeria');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Andorra');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Angola');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Antigua and Barbuda');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Argentina');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Armenia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Australia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Austria');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Azerbaijan');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('The Bahamas');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Bahrain');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Bangladesh');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Barbados');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Belarus');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Belgium');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Belize');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Benin');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Bhutan');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Bolivia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Bosnia and Herzegovina');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Botswana');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Brazil');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Brunei');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Bulgaria');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Burkina Faso');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Burundi');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Cambodia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Cameroon');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Canada');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Cape Verde');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Central African Republic');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Chad');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Chile');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('China');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Colombia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Comoros');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Congo, Republic of the');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Congo, Democratic Republic of the');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Costa Rica');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Cote d Ivoire');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Croatia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Cuba');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Cyprus');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Czech Republic');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Denmark');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Djibouti');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Dominica');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Dominican Republic');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('East Timor (Timor-Leste)');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Ecuador');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Egypt');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('El Salvador');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Equatorial Guinea');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Eritrea');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Estonia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Ethiopia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Fiji');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Finland');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('France');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Gabon');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('The Gambia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Georgia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Germany');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Ghana');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Greece');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Grenada');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Guatemala');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Guinea');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Guinea-Bissau');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Guyana');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Haiti');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Honduras');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Hungary');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Iceland');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('India');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Indonesia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Iran');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Iraq');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Ireland');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Israel');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Italy');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Jamaica');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Japan');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Jordan');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Kazakhstan');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Kenya');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Kiribati');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Korea, North');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Korea, South');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Kosovo');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Kuwait');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Kyrgyzstan');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Laos');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Latvia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Lebanon');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Lesotho');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Liberia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Libya');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Liechtenstein');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Lithuania');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Luxembourg');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Macedonia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Madagascar');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Malawi');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Malaysia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Maldives');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Mali');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Malta');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Marshall Islands');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Mauritania');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Mauritius');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Mexico');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Micronesia, Federated States of');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Moldova');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Monaco');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Mongolia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Montenegro');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Morocco');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Mozambique');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Myanmar (Burma)');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Namibia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Nauru');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Nepal');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Netherlands');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('New Zealand');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Nicaragua');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Niger');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Nigeria');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Norway');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Oman');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Pakistan');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Palau');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Panama');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Papua New Guinea');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Paraguay');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Peru');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Philippines');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Poland');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Portugal');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Qatar');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Romania');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Russia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Rwanda');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Saint Kitts and Nevis');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Saint Lucia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Saint Vincent and the Grenadines');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Samoa');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('San Marino');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Sao Tome and Principe');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Saudi Arabia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Senegal');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Serbia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Seychelles');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Sierra Leone');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Singapore');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Slovakia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Slovenia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Solomon Islands');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Somalia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('South Africa');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('South Sudan');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Spain');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Sri Lanka');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Sudan');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Suriname');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Swaziland');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Sweden');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Switzerland');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Syria');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Taiwan');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Tajikistan');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Tanzania');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Thailand');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Togo');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Tonga');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Trinidad and Tobago');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Tunisia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Turkey');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Turkmenistan');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Tuvalu');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Uganda');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Ukraine');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('United Arab Emirates');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('United Kingdom');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('United States of America');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Uruguay');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Uzbekistan');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Vanuatu');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Vatican City (Holy See)');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Venezuela');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Vietnam');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Yemen');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Zambia');
+INSERT INTO [dbo].[Paises] (Nombre)
+VALUES ('Zimbabwe');

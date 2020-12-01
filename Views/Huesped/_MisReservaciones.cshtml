@@ -1,0 +1,12 @@
+﻿@using Microsoft.AspNetCore.Http
+
+
+@if (Context.Session.GetString("Usuario") != null)
+{
+    <li class="nav-item">
+        <a href="@Url.Action("Reservacion", "Huesped")" class="nav-link">Reservar</a>
+    </li>
+    <li class="nav-item">
+        <a href="@Url.Action("Perfil", "Huesped")" class="nav-link">Mis Reservaciones</a>
+    </li>
+}

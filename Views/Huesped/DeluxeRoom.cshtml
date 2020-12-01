@@ -1,0 +1,34 @@
+﻿@model HotelHenry.Models.Habitacion
+@{
+    ViewData["Title"] = "Habitación Deluxe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center mt-5 mb-5 titulo">
+                <h1>Habitación Deluxe</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-justify">
+                    La habitación Deluxe es perfecta para descansar y disfrutar tu estancia con tu familia
+                    y amigos. Todas nuestras habitaciones Deluxe cuentan con dos camas dobles, las cuales
+                    están equipadas con aire acondicionado, TV de plasma y mini-refrigerador.
+                </p>
+
+                <h3 class="mt-5 text-left">Precio regular por noche: <strong>$@String.Format("{0:0}", Model.CostoAdultos)</strong></h3>
+                <h3 class="mb-5 text-left">Precio niños y adultos mayores: <strong>$@String.Format("{0:0}", Model.CostoNinos)</strong></h3>
+                @Html.ActionLink("Reservar", "Reservacion", "Huesped", null,  new { @class = "btn btn-success bt-lg mb-5" })
+            </div>
+
+            <div class="col-md-6">
+                <img src="~/Images/Habitaciones/Deluxe.jpg" alt="Habitación Deluxe" class="img-fluid" width="100%">
+            </div>
+        </div>
+    </div>
+</section>
+

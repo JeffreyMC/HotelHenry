@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAyTvqcXUEbkKvMvIq8gTNjAAAAAACAAAAAAAQZgAAAAEAACAAAAD0DnvlcVKR7RZyXbToTjkmx2j7tNcv0DIIs8Qmfn+BtgAAAAAOgAAAAAIAACAAAABJ5KcM7LJjcDDsfwENSR97eGtQ1W65JCt25iUf6DV8n4AAAACpvwicCICImUUId8FvzmsKcQw+lym0Aecx8Unj7y77gHqnL3S3507CElLZrSjSB4vIRkMCVdRMu+5x4uslp718vZoyIfdXv3yCyeczNWaEd8/vrcERUi6uxL1pIZU7t2SLcBKGANEVnqc01nxGlkgCJAmP9AwMMqVi0+Dp6E62i0AAAACDGzkj3MFNua90fzRBlfp44NQQ8Ulxi++ffk8RUjAyMK2DJ/8LWwfRbh1lDuJf9ggsaL13ZIMfEjA0LTRO6+nL</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="HotelContext">
+      <Value>Data Source=tcp:hotelhenrydbserver.database.windows.net,1433%3bInitial Catalog=HotelHenryWeb_db%3bUser Id=JeffreyMC%40hotelhenrydbserver%3bPassword=Jeff.160988</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="HotelHenry.Data.HotelContext">
+      <Value>Data Source=tcp:hotelhenrydbserver.database.windows.net,1433%3bInitial Catalog=HotelHenryWeb_db%3bUser Id=JeffreyMC%40hotelhenrydbserver%3bPassword=Jeff.160988</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
